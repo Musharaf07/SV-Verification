@@ -5,7 +5,7 @@ module fifo
    input [DATA_WIDTH-1:0] din, 
    output reg [DATA_WIDTH-1:0] dout, 
    output empty, full); 
-
+  
   localparam FIFO_DEPTH_LOG = $clog2(FIFO_DEPTH); 
 
   reg [DATA_WIDTH-1:0] fifo [0:FIFO_DEPTH-1];
